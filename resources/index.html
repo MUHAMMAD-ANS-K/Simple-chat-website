@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <title>Request</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="message flex" id="response">
+        <h2>Response</h2>
+        <div id="chat">
+          <p>Typing...</p>
+        </div>
+        <button class="more button block">Ask more</button>
+      </div>
+      <div class="message flex" id="askq">
+        <p>Ask me anything and I will reply with complete honesty.</p>
+        <input id='msg' type='text' placeholder='Type here' name="question" />
+        <button class='button block' id='sendbtn' type="submit">Send</button>
+      </div>
+      <div class="message hid" id="firstmsg">
+        <h2>Just a quick little question.</h2>
+        <p>Can I talk to you?</p>
+        <div class="flex">
+          <button class="button" id="Yes-first">Yes</button>
+          <button class="button" id="No-first">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="starCanvas">
+  </canvas>
+
+  <script src="/index.js">
+  </script>
+</body>
+
+</html>
